@@ -1,62 +1,41 @@
-[Project]
-filename=calculator dop.dev
-name=Project1
-Type=1
-Ver=2
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=1
-Icon=
-ExeOutput=
-ObjectOutput=
-LogOutput=
-LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-UseCustomMakefile=0
-CustomMakefile=
-CommandLine=
-Folders=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;4;0;0;0
-UnitCount=1
-
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
-
-[Unit1]
-FileName=..\Pictures\calud.cpp
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
+#include<stdio.h>
+main()
+{
+	printf("Created By Dev.varun V-1.0.0\n");
+	int a,b,password, ch ;
+	char name[12];
+	printf("Please Login \n");
+	printf("please Enter Your name = ");
+	scanf("%s",&name);
+	printf("Enter Deafult Password (1234567890)\n");
+	printf("%s",name);
+	scanf("%i",&password);
+	if(password==1234567890)
+	{
+	printf("login success\n");
+	printf("Enter one number ");
+	scanf("%i",&a);
+	printf("Enter two number");
+	scanf("%i",&b);
+printf("enter choice\npress 1 for sum\npress 2 for subtract\npress 3 for multiplie\npress 4 divide\n");
+scanf("%i",&ch);
+if(ch==1)
+printf("sum is %i ", a+b);
+else 
+if(ch==2)
+printf("sub is %i ", a-b);
+else 
+if(ch==3)
+printf("mul is %i ", a*b);
+else
+if(ch==4)
+printf("divide is %i", a/b);
+else
+printf("wrong entry try again ");
+   
+    
+    
+}
+else
+printf("login fail try again ");
+}
